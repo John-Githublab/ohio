@@ -1,0 +1,537 @@
+/* Box sizing rules */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+* ul {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+html {
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* common */
+:root {
+  --red: #d90a2c;
+  --white: #fff;
+  --white50: #a4a3a6;
+  --black: rgb(23, 22, 26);
+}
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5.5vw + 0.5rem, 4.2rem);
+  font-weight: 800;
+}
+.hr {
+  margin-top: 75px;
+  opacity: 0;
+}
+/* common */
+.nav {
+  background-color: red;
+}
+.nav__second a {
+  flex-direction: column;
+  display: flex;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.nav__second span {
+  align-self: flex-end;
+  font-size: small !important;
+}
+.nav__btn2 {
+  background-color: var(--black);
+  color: white;
+}
+.nav__btn2:hover,
+.main-button:hover {
+  background-color: var(--red) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--black);
+}
+.xy {
+  flex-basis: 0 !important;
+  flex-grow: 0 !important;
+}
+.nav__btn2 {
+  align-self: center;
+}
+
+/* main-banner */
+.main-banner {
+  margin-top: 1.25rem;
+  overflow: hidden;
+}
+.main-banner-txt-holder {
+  top: -0.625rem;
+  left: 0;
+  overflow-x: hidden;
+  min-height: 50rem;
+  width: 100%;
+  right: 0;
+}
+.main-banner-col1 {
+  background-image: url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img134.jpg?id=17");
+  min-height: 55vh;
+  background-size: cover;
+}
+.main-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.9rem, 5.5vw + 0.5rem, 4.2rem);
+  font-weight: 800;
+}
+.main-texts::before {
+  content: "";
+  background-color: var(--red);
+  mix-blend-mode: multiply;
+  position: absolute;
+  z-index: 0;
+  border-radius: 100%;
+  min-width: 50rem;
+  min-height: 50rem;
+}
+.main-txt-wrapper {
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+  text-align: end;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-txt-wrapper span {
+  background: var(--black);
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-button {
+  background: var(--black);
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.625rem;
+}
+/* main-banner */
+
+/* TESTIMONIALS*/
+.tags {
+  font-size: 1rem;
+  color: var(--black);
+}
+.testi-p1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testi-profile {
+  width: 54px;
+  aspect-ratio: 1;
+}
+.testi-profile img {
+  width: 100%;
+  height: 100%;
+}
+.testi-pagination {
+  width: 100%;
+  justify-content: space-between;
+}
+.testi-p2 {
+  margin-right: 30px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pl-holder {
+  margin: auto;
+  height: 10px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-line {
+  width: 50px;
+  height: 1.5px;
+  background: #000;
+  display: inline-block;
+}
+.testimonials-col2 {
+  min-width: 23.4375rem;
+  min-height: 18.4375rem;
+  background-image: url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img137.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+/* TESTIMONIALS*/
+
+/* <!-- news -->*/
+.news-card {
+  /* background: #f3f3f3; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.newc * {
+  color: var(--black);
+  z-index: 1;
+  position: relative;
+}
+.newc {
+  background: #f3f3f3;
+  position: relative;
+}
+.newc:hover * {
+  color: var(--white);
+  transition: 1s;
+}
+.newc::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+      137deg,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.3) 50%
+    ),
+    url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img100_small-768x492.jpg");
+  transition: 1s;
+  z-index: 0;
+  opacity: 0;
+}
+.newc:hover::after {
+  opacity: 1;
+  transition: 1s;
+}
+
+/* <!-- news -->*/
+
+/* footer */
+.footer-links {
+  background-color: var(--black);
+}
+.footer-links h3 {
+  color: var(--white50);
+  font-size: 20px;
+  padding-block: 20px;
+}
+.footer-links p {
+  color: var(--white);
+}
+/* main area section 1 */
+.achieve {
+  background-color: var(--black);
+  z-index: 1;
+}
+.achieve__logo1 {
+  width: 40px;
+}
+.main-subtitle {
+  font-weight: 600;
+  font-size: 19px;
+}
+.achieve__cardarea {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.title2 {
+  font-size: 3.1875rem;
+  font-family: "Playfair Display";
+  font-weight: 800;
+  color: #fff;
+}
+
+.strategy {
+  overflow: hidden;
+}
+.strategy__area1 {
+  background-image: url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img135.jpg");
+  background-size: cover;
+}
+.strategy__area2 {
+  background-image: url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img128.jpg");
+  background-size: cover;
+}
+.arr {
+  font-size: 1.2rem;
+}
+/* visual section */
+.visual__bar {
+  width: 95%;
+}
+.visual__bar-total {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  background-color: #a4a3a6;
+  height: 5px;
+}
+.visual__bar--perc {
+  position: absolute;
+  z-index: 2;
+
+  width: 86%;
+  background-color: var(--red);
+  display: inline-block;
+  height: 5px;
+  border-radius: 10px;
+}
+.visual__title {
+  font-size: clamp(2.8rem, 5.5vw + 0.5rem, 4.2rem);
+}
+
+.msg1 {
+  background-color: var(--black);
+  color: var(--white);
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.msg1::after {
+  content: "";
+  width: 30px;
+  height: 20px;
+  background-color: var(--black);
+  position: absolute;
+  z-index: -1;
+  transform: rotate(20deg);
+  left: 16px;
+  top: 10px;
+}
+
+/* image section area */
+.visual__image-area {
+  justify-content: space-between;
+}
+.visual__img1 {
+  background-image: url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img136.jpg?id=19");
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.last-banner {
+  height: 80vh;
+  background: url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img147.jpg");
+  background-position: bottom;
+}
+.visual__img2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-image: url("https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img75.jpg?id=20");
+}
+.visual__playbtn {
+  background-color: var(--black);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.visual__playbtn i {
+  color: var(--white);
+}
+.hidden1 {
+  display: none;
+}
+.model,
+.visual__expand {
+  transition: all 5s;
+}
+.plus {
+  cursor: pointer;
+}
+/* projects area */
+
+.project__icon i {
+  color: var(--red);
+}
+.subhead {
+  font-weight: bold;
+}
+.footer__icon i {
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+/* media queries starting for more than width 425px */
+
+@media (min-width: 27.5627rem) {
+  .title2 {
+    width: 70% !important;
+  }
+  .visual__title {
+    width: 100% !important;
+  }
+  .visual__expand {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .visual__area2 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+/* tablet */
+@media (min-width: 48rem) {
+  /* main-banner */
+  .main-banner-col1 {
+    min-height: 70vh;
+  }
+  .main-banner-txt-holder {
+    top: 0px;
+    left: 12.5rem;
+  }
+  .main-txt-wrapper {
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 450px;
+    margin-left: 6rem;
+  }
+  .main-txt-wrapper span {
+    margin-top: 4.375rem;
+  }
+  /* TESTIMONIALS*/
+  .testimonials-col2 {
+    min-height: 25rem;
+  }
+  .testi-profile {
+    width: 60px;
+  }
+}
+/* pc small */
+@media (min-width: 63.9375rem) {
+  /* main-banner */
+  .main-banner {
+    margin-top: 1.25rem;
+  }
+  .main-banner-col1 {
+    min-height: 90vh;
+  }
+  .main-banner-txt-holder {
+    top: 1.5rem;
+    left: 13.5rem;
+  }
+  .main-txt-wrapper span {
+    margin-top: 0;
+  }
+  .main-txt-wrapper {
+    text-align: start;
+    align-items: flex-start;
+    margin-left: 20.5rem;
+  }
+  .nav__second a {
+    margin-right: 0 !important;
+  }
+  .news-content h2 {
+    font-size: 1.58rem;
+  }
+}
+
+/* pc large */
+
+@media (min-width: 1281px) {
+  /* main-banner */
+  .main-banner-col1 {
+    min-height: 100vh;
+  }
+  .main-banner-txt-holder {
+    top: 1rem;
+    left: 34.1rem;
+  }
+  .main-txt-wrapper {
+    text-align: start;
+    margin-left: 19rem;
+  }
+  .nav__second a {
+    margin-right: 1.8rem !important;
+  }
+  .news-content h2 {
+    font-size: 2rem;
+  }
+}

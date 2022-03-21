@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <title>Ohio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- body area starting -->
+  <nav>
+    <!-- nav area starting -->
+    <!-- off canvas navbar -->
+    <nav class="navbar navbar-light bg-light fixed-top container-fluid px-3">
+      <div class="container-fluid d-flex flex-row flex-nowrap my-2 px-0">
+        <div class="logo-area d-flex">
+          <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/OhioLogo.svg" alt="logo" />
+        </div>
+        <div class="btn-and-nav__wrapped d-flex">
+          <div class="navbar-collapse d-none d-lg-inline xy d-flex flex-row justify-content-center align-items-center"
+            id="navbarNavAltMarkup">
+            <div class="nav__second text-black d-flex flex-row justify-content-start">
+              <a class="nav-link" aria-current="page" href="#">
+                <span> 01</span> Home
+              </a>
+              <a class="nav-link" href="#"> <span> 02</span> Features </a>
+              <a class="nav-link" href="#"> <span> 03</span>Elements </a>
+              <a class="nav-link" href="#"> <span> 04</span>Portfolio </a>
+              <a class="nav-link" href="#"> <span> 05</span>Blog </a>
+              <a class="nav-link" href="#"> <span> 07</span>Shop </a>
+              <a class="nav-link" href="#"> <span> 08</span>Docs </a>
+            </div>
+          </div>
+          <button class="btn bg-dark text-white nav__btn2 h-100">
+            <span>Lets Talk</span>
+          </button>
+        </div>
+
+        <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Offcanvas
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </nav>
+
+  <!-- nav area end -->
+  <!-- header start -->
+  <hr class="hr" />
+  <header class="mt-2 mb-lg-0 px-xl-5">
+    <div class="container-fluid main-banner position-relative py-5 py-md-3 py-lg-0 px-xl-5">
+      <div class="row main-banner-holder my-1 mb-lg-0">
+        <div class="col col-md-8 col-lg-7 col-xl-7 main-banner-col main-banner-col1 text-white"></div>
+        <div class="col main-banner-col main-banner-col2 d-none d-sm-block"></div>
+      </div>
+      <div class="main-banner-txt-holder position-absolute">
+        <div class="main-texts position-relative">
+          <div class="main-txt-wrapper pt-5 px-1">
+            <span class="rounded-circle"><i class="fas fa-play"></i></span>
+            <h1 class="main-title text-light mt-4">
+              Retiro de <br />liderazgo para mujeres en diseño.
+            </h1>
+            <p class="main-subtitle mt-4">
+              With unique business ideas and the passionate people behind.
+            </p>
+            <a href="#" class="main-button mt-4 text-light"> Get Started </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- main area starting-->
+
+  <main>
+    <!-- section achieve -->
+    <section class="achieve text-white pt-5 p-0 position-relative m-0">
+      <hr class="mt-5" />
+      <div class="container-fluid row m-0">
+        <!-- div1 contains para and a title quote -->
+        <div class="achieve__main-area1 ps-2 pe-0 col-sm-12 col-md-6 mb-2">
+          <p class="para text-white-50">WHAT WE DO</p>
+          <h1 class="title2 w-100">
+            Does more then ever platform to achieve goal stages.
+          </h1>
+        </div>
+        <!-- second div contains para and 4similar cards -->
+        <div class="achieve__main-area2 col-sm-12 col-md-6 mt-4">
+          <p class="para">
+            Our clients describe us as a product team which creates
+            <strong> amazing UI/UX experiences </strong>, by crafting
+            top-notch user experience.
+          </p>
+          <div class="achieve__cards row mt-4 mb-3">
+            <div class="col-sm-12 col-md-6 achieve__cardarea d-grid gap-3">
+              <div class="achieve__logo1">
+                <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/demo23_icon1-2.png" alt="logo"
+                  class="src" />
+              </div>
+              <p class="main-subtitle">Data Tracking</p>
+              <p class="para text-white-50">
+                We help digital companies to volume their self-interest and
+                get a space.
+              </p>
+            </div>
+            <!-- card2 -->
+            <div class="col-sm-12 col-md-6 achieve__cardarea d-grid gap-3">
+              <div class="achieve__logo1">
+                <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/demo23_icon2.png" alt="logo"
+                  class="src" />
+              </div>
+              <p class="main-subtitle">Data Tracking</p>
+              <p class="para text-white-50">
+                We help digital companies to volume their self-interest and
+                get a space.
+              </p>
+            </div>
+            <!-- card3 -->
+            <div class="col-sm-12 col-md-6 achieve__cardarea d-grid gap-3">
+              <div class="achieve__logo1">
+                <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/demo23_icon3.png" alt="logo"
+                  class="src" />
+              </div>
+              <p class="main-subtitle">Data Tracking</p>
+              <p class="para text-white-50">
+                We help digital companies to volume their self-interest and
+                get a space.
+              </p>
+            </div>
+            <!-- card4 -->
+            <div class="col-sm-12 col-md-6 achieve__cardarea d-grid gap-3">
+              <div class="achieve__logo1">
+                <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/demo23_icon4.png" alt="logo"
+                  class="src" />
+              </div>
+              <p class="main-subtitle">Data Tracking</p>
+              <p class="para text-white-50">
+                We help digital companies to volume their self-interest and
+                get a space.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- new section strategy starting -->
+    <section class="strategy">
+      <div class="row">
+        <!-- a div with sm-100, md-50 having bg image,para  and the button -->
+        <article class="strategy__area1 col-sm-12 col-md-6 px-5 py-5">
+          <p class="para text-white-50 fw-bolder mt-5">CAPABILITIES</p>
+          <h1 class="title2">Team Management. Brand strategy.</h1>
+          <button class="btn nav__btn2 mt-3 mb-5">
+            View Services &nbsp; <i class="fas fa-arrow-right"></i>
+          </button>
+        </article>
+        <!--another div sm-100, md-50 with bg image,para  and the button  -->
+        <article class="strategy__area2 col-sm-12 col-md-6 px-5 py-5">
+          <p class="para text-white-50 fw-bolder mt-5">SHOWCASE</p>
+          <h1 class="title2">Team Management. Brand strategy.</h1>
+          <button class="btn nav__btn2 mt-3">
+            View Services &nbsp;<i class="fas fa-arrow-right"></i>
+          </button>
+        </article>
+      </div>
+    </section>
+    <!-- new section visual -->
+    <section class="visual container">
+      <div class="row g-0 mt-5 pt-5 mb-3 justify-content-between">
+        <!-- a div that of md-50 ,sm-100 that has para ,title2, and bar graph -->
+        <article class="visual__area1 text-black col-sm-12 col-lg-5 col-md-6 ps-3 mb-3">
+          <p class="para">CAPABILITIES</p>
+          <h1 class="title2 visual__title text-black w-100 m-0 mt-3 mb-5">
+            We help to create visual strategies.
+          </h1>
+          <div class="visual__bar">
+            <div class="d-flex flex-row justify-content-between">
+              <p class="para fw-bold">Website & Mobile Development</p>
+              <div class="msg1">86%</div>
+            </div>
+            <div class="visual__bar-total mt-3">
+              <div class="visual__bar--perc"></div>
+            </div>
+          </div>
+        </article>
+        <!-- a div that of md-50, sm-100 that has 3 plus logo and para -->
+        <article class="visual__area2 col-sm-12 col-lg-5 col-md-5 mt-3 ps-3 mb-3">
+          <div class="visual__expand g-2 gap-4 align-items-baseline">
+            <div class="d-flex align-items-baseline flex-column">
+              <h6 class="plus fs-1 me-3 d-flex align-items-baseline">
+                <span>+ </span>
+                <span class="fs-6 ms-4" id="plus-minus">
+                  Website & Mobile App Design</span>
+              </h6>
+              <div class="model hidden1">
+                We’ve created a full-stack structure for our working workflow
+                processes, were from the funny the century initial all the
+                made, have spare to negatives.
+              </div>
+            </div>
+          </div>
+          <div class="visual__expand d-flex g-2 gap-4 align-items-baseline">
+            <div class="d-flex align-items-baseline flex-column">
+              <h6 class="plus fs-1 me-3 d-flex align-items-baseline">
+                <span>+ </span>
+                <span class="fs-6 ms-4" id="plus-minus">Motion Graphics & Animation
+                </span>
+              </h6>
+              <div class="model hidden1">
+                We’ve created a full-stack structure for our working workflow
+                processes, were from the funny the century initial all the
+                made, have spare to negatives.
+              </div>
+            </div>
+          </div>
+          <div class="visual__expand d-flex g-2 gap-4 align-items-baseline">
+            <div class="d-flex align-items-baseline flex-column">
+              <h6 class="plus fs-1 me-3 d-flex align-items-baseline">
+                <span>+ </span>
+                <span class="fs-6 ms-4" id="plus-minus">
+                  Website & Mobile App Design</span>
+              </h6>
+              <div class="model hidden1">
+                We’ve created a full-stack structure for our working workflow
+                processes, were from the funny the century initial all the
+                made, have spare to negatives.
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- image area section -->
+      <div class="visual__image-area row">
+        <!-- article image 1 md-7 sm-12 with nly background image -->
+        <article class="visual__img1 col-md-7 col-sm-12 d-flex justify-content-center align-items-center">
+          <div class="visual__playbtn d-flex justify-content-center align-items-center">
+            <i class="fas fa-play"></i>
+          </div>
+        </article>
+        <!-- article image 2 md-4 sm-done with only background image -->
+        <article class="visual__img2 col-md-4 col-sm-none"></article>
+      </div>
+      <!-- projects small section of visual -->
+      <section class="projects row pt-5 pe-5 ps-2 g-5">
+        <!-- article 236 with md-4 sm-12 contain icon and number ,top para ,and a long para  -->
+        <article class="projects__236 col-sm-12 col-md-4">
+          <div class="icon-number d-flex align-items-center">
+            <div class="project__icon me-3">
+              <i class="fas fa-th fs-2"></i>
+            </div>
+            <h1 class="project__number fs-1 fw-bolder">236 +</h1>
+          </div>
+          <h6 class="subhead mt-2">
+            Succeeded <br />
+            projects
+          </h6>
+          <p class="para mt-4 fs-6">
+            Our clients describe us as a product team which creates
+            <strong> amazing UI/UX,</strong> by crafting top-notch user
+            experience.
+          </p>
+        </article>
+        <!-- article 237 with md-4 sm-12 contain icon and number ,top para ,and a long para  -->
+        <article class="projects__237 col-sm-12 col-md-4">
+          <div class="icon-number d-flex align-items-center">
+            <div class="project__icon me-3">
+              <i class="fas fa-th fs-2"></i>
+            </div>
+            <h1 class="project__number fs-1 fw-bolder">1099 +</h1>
+          </div>
+          <h6 class="subhead mt-2">
+            Succeeded <br />
+            projects
+          </h6>
+          <p class="para mt-4 fs-6">
+            Our clients describe us as a product team which creates
+            <strong> amazing UI/UX,</strong> by crafting top-notch user
+            experience.
+          </p>
+        </article>
+      </section>
+
+      <!--  -->
+    </section>
+    <!-- new brand section starting -->
+    <section class="container mt-5">
+      <!-- brand logo article sm-6 md-2 -->
+      <div class="row mt-4 gy-5">
+        <div class="brand__logo col-6 col-md-2">
+          <div class="brand__logos">
+            <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_01.png" alt="logo" />
+          </div>
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_02.png" alt="logo" />
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_03.png" alt="logo" />
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_04.png" alt="logo" />
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_05.png" alt="logo" />
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_06.png" alt="logo" />
+        </div>
+      </div>
+      <div class="row mt-5 gy-5">
+        <div class="brand__logo col-6 col-md-2">
+          <div class="brand__logos">
+            <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_07.png" alt="logo" />
+          </div>
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_08.png" alt="logo" />
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_09.png" alt="logo" />
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_10.png" alt="logo" />
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_11.png" alt="logo" />
+        </div>
+        <div class="brand__logo col-6 col-md-2">
+          <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh_logo_12.png" alt="logo" />
+        </div>
+      </div>
+    </section>
+    <!-- section visual ending -->
+    <!-- /* TESTIMONIALS*/-->
+    <section class="container testimonials my-5 pt-lg-5">
+      <div class="row testimonials-holder mt-lg-4 pt-lg-5">
+        <div class="col-12 col-lg-6 testimonials-col testimonials-col1 py-5 p mt-lg-5">
+          <h4 class="tags testimonial-tag pt-5 mt-xl-5">TESTIMONIALS</h4>
+          <h1 class="title py-3">We help to achieve mutual goals.</h1>
+          <div class="testimonial-one">
+            <div class="testi-profile mt-3">
+              <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/oh__img8.png" alt="img" />
+            </div>
+            <div class="testi-txts mt-md-3">
+              <h5 class="testi-head pt-2">Design Quality</h5>
+              <p class="testi-para">
+                “I tell you what, there has never been an issue that Cory from
+                the Colabrio Support Team hasn't been able to solve for me.”
+              </p>
+            </div>
+            <div class="testi-txts testi-txts2 pt-4">
+              <h4 class="testi-head testi-head2">Laura Morton</h4>
+              <p class="testi-para testi-para2 pt-2">
+                UI/UX Designer, Colabrio
+              </p>
+            </div>
+            <div class="testi-pagination py-4 d-flex">
+              <div class="testi-page testi-p1">
+                <span class="fw-bolder">1</span>
+                <span class="pl-holder"><span class="page-line"></span></span>
+                <span class="fw-bolder">3</span>
+              </div>
+              <div class="testi-page testi-p2">
+                <span class="testi-page-arrow testi-page-arrow1"><i class="fas fa-arrow-left"></i></span>
+                <span class="testi-page-arrow testi-page-arrow2"><i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 testimonials-col testimonials-col2 p-0"></div>
+      </div>
+    </section>
+    <!-- /* TESTIMONIALS*/-->
+    <!-- news -->
+    <section class="container news px-2 my-5">
+      <h4 class="tags testimonial-tag pt-5 mt-xl-5">NON-PROFIT INITIATIVE</h4>
+      <h1 class="title py-3">Recent News.</h1>
+      <div class="row news-holder py-5 ">
+        <!-- col-1 -->
+        <div class="col-12 col-lg-4 news-card new-card1 py-4">
+          <!-- --- -->
+          <div class=" p-4 newc">
+            <div class="news-card-profile d-flex gap-3 pb-4">
+              <div class="news-pro-img">
+                <img
+                  src="https://ohio.clbthemes.com/demo23/wp-content/wphb-cache/gravatar/405/4058fe7404c4f9d88d5d2d6db42320f8x50.jpg"
+                  alt="img" />
+              </div>
+              <div class="news-pro-txts">
+                <p>Posted by <span class="fw-bolder">Colabrio</span></p>
+                <p>July 5, 2019</p>
+              </div>
+            </div>
+            <div class="news-content">
+              <p class="pb-2">
+                <span c mb-lg-0lass="fw-bold">Personal, Stories</span> 4 min
+                read
+              </p>
+              <h2 class="pb-5 mb-md-5 mb-lg-0">
+                The Start-Up Ultimate Guide to Make Your WordPress Journal.
+              </h2>
+            </div>
+            <a href="#" class="fw-bolder mt-md-5 pt-md-5 mt-lg-0 pt-lg-0 d-inline-block">Read More<i
+                class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+          <!-- --- -->
+
+        </div>
+        <!-- col-3 -->
+        <div class="col-12 col-lg-4 news-card new-card2 py-4">
+          <!-- --- -->
+          <div class="newc p-4">
+            <div class="news-card-profile d-flex gap-3 pb-4">
+              <div class="news-pro-img">
+                <img
+                  src="https://ohio.clbthemes.com/demo23/wp-content/wphb-cache/gravatar/405/4058fe7404c4f9d88d5d2d6db42320f8x50.jpg"
+                  alt="img" />
+              </div>
+              <div class="news-pro-txts">
+                <p>Posted by <span class="fw-bolder">Colabrio</span></p>
+                <p>July 5, 2019</p>
+              </div>
+            </div>
+            <div class="news-content">
+              <p class="pb-2">
+                <span class="fw-bold">Personal, Stories</span> 4 min read
+              </p>
+              <h2 class="pb-5 mb-md-5 mb-lg-0">
+                The Start-Up Ultimate Guide to Make Your WordPress Journal.
+              </h2>
+            </div>
+            <a href="#" class="fw-bolder mt-md-5 pt-md-5 mt-lg-0 pt-lg-0 d-inline-block">Read More<i
+                class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+          <!-- --- -->
+        </div>
+        <!-- col-3 -->
+        <div class="col-12 col-lg-4 news-card new-card3 py-4">
+          <!-- --- -->
+          <div class=" newc p-4">
+            <div class="news-card-profile d-flex gap-3 pb-4">
+              <div class="news-pro-img">
+                <img
+                  src="https://ohio.clbthemes.com/demo23/wp-content/wphb-cache/gravatar/405/4058fe7404c4f9d88d5d2d6db42320f8x50.jpg"
+                  alt="img" />
+              </div>
+              <div class="news-pro-txts">
+                <p>Posted by <span class="fw-bolder">Colabrio</span></p>
+                <p>July 5, 2019</p>
+              </div>
+            </div>
+            <div class="news-content">
+              <p class="pb-2">
+                <span class="fw-bold">Personal, Stories</span> 4 min read
+              </p>
+              <h2 class="pb-5 mb-md-5 mb-lg-0">
+                The Start-Up Ultimate Guide to Make Your WordPress Journal.
+              </h2>
+            </div>
+            <a href="#" class="fw-bolder mt-md-5 pt-md-5 mt-lg-0 pt-lg-0 d-inline-block">Read More<i
+                class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+          <!-- --- -->
+        </div>
+      </div>
+    </section>
+    <!-- news -->
+    <!-- last banner -->
+    <article class="visual__img1 last-banner container-fluid d-flex justify-content-center align-items-center">
+      <div class="visual__playbtn d-flex justify-content-center align-items-center">
+        <i class="fas fa-play"></i>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <section class="footer row gy-2">
+      <!-- md-5 sm-12 havinga googlre map -->
+      <article class="col-lg-5 col-sm-12">
+        <img src="https://i.stack.imgur.com/XPIko.png" alt="maps">
+      </article>
+      <!--  md-3 sm-12 having formsdetails  icon ,subhead,para, -->
+      <!-- s -->
+
+      <article class="col-sm-12 col-lg-3 mt-5">
+        <div class="px-4 mt-3">
+          <div class="footer__icon"><i class="fas fa-phone-alt"></i> <br> Get in touch <br> </div>
+          <p class="subhead mt-3">Work and general inquiries</p>
+          <p class="para mt-2"></p>
+          <strong> +1.809.120.6705 </strong>
+          <p class="para mt-3"><strong>Assistance hours:</strong></p>
+          <p class="para"> Monday – Friday
+            <br> 6 am to 8 pm EST
+          </p>
+        </div>
+      </article>
+      <!-- md-4 sm-12 formdetails icon ,sub haed ,desc -->
+      <article class="col-sm-12 col-lg-3 mt-5">
+        <div class="px-4 mt-3">
+          <div class="footer__icon"><i class="fas fa-envelope"></i> <br> Get in touch <br> </div>
+          <p class="subhead mt-3">Post Address</p>
+          <p class="para"> 541 Melville Ave, Palo Alto, <br>
+            CA 94301, <br>
+            United States
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- career -->
+
+    <!-- career -->
+    <!-- footer -->
+    <div class="container-fluid footer-links py-5 mt-5">
+      <div class="row px-2">
+        <div class="col-12 py-5 col-md-6 col-lg-3">
+          <div class="logo-area d-flex">
+            <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-23/OhioLogoLight.svg" alt="logo" />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="row">
+            <div class="col-12 ">
+              <h3>Barcelona</h3>
+              <p>365 Gran Via de Corts,<br>
+                Catalanes, BA 08015</p>
+            </div>
+            <div class="col-12">
+              <h3>Rotterdam</h3>
+              <p>Graaf Florisstraat 22A,<br>
+                3021 CH Rotterdam,<br>
+                Netherlands</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="row">
+            <div class="col-12">
+              <h3>Work inquiries</h3>
+              <p>Interested in working with us?</p>
+              <p><strong>hola@ohio.colabr.io</strong></p>
+            </div>
+            <div class="col-12">
+              <h3>Phone</h3>
+              <p>Ph: +3.230.705.5448</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>Stay in touch</h3>
+          <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+  </footer>
+
+  <!-- javascript area -->
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
